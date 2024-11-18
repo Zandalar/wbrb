@@ -1,0 +1,44 @@
+@use '../../../../global';
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 20px;
+}
+
+.filter {
+  padding: 6px 12px;
+  background-color: global.$main;
+  border-radius: 8px;
+  border: 1px solid global.$green;
+  cursor: pointer;
+
+  &:hover {
+    background-color: global.$green;
+    border: 1px solid global.$accent-green;
+  }
+}
+
+.button {
+  display: flex;
+  padding: 8px 16px;
+  border: 1px solid global.$green;
+  background-color: global.$accent-green;
+  border-radius: 6px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: global.$dark-green;
+  }
+}

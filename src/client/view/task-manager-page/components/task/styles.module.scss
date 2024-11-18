@@ -1,0 +1,65 @@
+@use '../../../../global';
+
+.task {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 16px;
+  gap: 8px;
+  border-radius: 12px;
+  background-color: global.$dark-green;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.buttons {
+  display: flex;
+  justify-self: flex-end;
+  width: max-content;
+  gap: 4px;
+  grid-column: 2 / 3;
+}
+
+.title {
+  margin: 0;
+}
+
+.description {
+  margin: 0;
+}
+
+.text {
+  margin: 0;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: global.$accent-green;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: global.$green;
+
+    & > svg {
+      fill: global.$dark-green;
+    }
+  }
+
+  &:active {
+    background-color: global.$dark-green;
+  }
+}

@@ -1,0 +1,43 @@
+@use '../../../../global';
+
+.popup {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(#000000, 0.7);
+  width: 100%;
+  height: 100vh;
+  inset: 0;
+}
+
+.content {
+  position: relative;
+  width: 30%;
+  background: global.$main;
+  border-radius: 8px;
+  padding: 32px;
+  border: 1px solid global.$green;
+}
+
+.button {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: global.$accent-green;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: global.$green;
+  }
+
+  &:active {
+    background-color: global.$dark-green;
+  }
+}
