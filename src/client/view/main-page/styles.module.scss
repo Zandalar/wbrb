@@ -18,13 +18,13 @@
 
   &-link {
     text-decoration: none;
-    color: global.$light-green;
+    color: global.$light-gray;
     font-size: 24px;
     line-height: 32px;
     font-weight: bold;
 
     &:hover {
-      color: global.$accent-green;
+      color: global.$green;
     }
   }
 }

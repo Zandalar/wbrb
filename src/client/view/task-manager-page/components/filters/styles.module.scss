@@ -23,15 +23,15 @@
 
   &:hover {
     background-color: global.$green;
-    border: 1px solid global.$accent-green;
+    border: 1px solid global.$dark-gray;
   }
 }
 
 .button {
   display: flex;
   padding: 8px 16px;
-  border: 1px solid global.$green;
-  background-color: global.$accent-green;
+  border: 3px solid global.$dark-green;
+  background-color: global.$green;
   border-radius: 6px;
   font-size: 24px;
   line-height: 32px;
